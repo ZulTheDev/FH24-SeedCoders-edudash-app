@@ -1,0 +1,109 @@
+/*
+Color Palette:
+1. Rajah               /#f9b56b           /rgb(249, 181, 107)
+2. Sandy Brown         /#f2885b           /rgb(242, 136, 91)
+3. Silver Tree         /#67b297           /rgb(103, 178, 151)
+4. Finlandia           /#616861           /rgb(97, 104, 97)
+5. Dandelion           /#fcd15c           /rgb(252, 209, 92)
+*/
+
+#container {
+    display: block;
+    max-width: 100%;
+    min-width: fit-content;
+    background-color: #feeeec;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 320px) {
+    #container {
+        max-width: 320px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+    #container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1080px) {
+    #container {
+        max-width: 1080px;
+    }
+}
+
+@media screen and (min-width: 1081px) and (max-width: 3840px) {
+    #container {
+        max-width: 3840px;
+    }
+}
+
+hr {
+    margin: 40px 20px;
+    height: 8px;
+    border-radius: 20px;
+    background-color: #f2885b;
+}
+
+.greet {
+    color: #f2885b;
+    font-family: 'sans-serif', monospace;
+    font-weight: bolder;
+    font-size: 7vw;
+    padding: 0 20px;
+}
+
+/* Navigation Bar Section */
+#nav {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #f2885b;
+}
+
+#nav > .nav-item {
+    padding: 0 20px;
+    margin: auto;
+    text-decoration: none;
+    color: #feeeec;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#create {
+    border-radius: 20px;
+    background-color: #67b297;
+    padding-right: 70px;
+}
+
+/*Content*/
+#section-1, #section-2 {
+    display: grid;
+    grid-row: 3;
+    padding: 0 20px;
+}
+
+#section-3 {
+    display: block;
+    flex-flow: column wrap;
+    padding: 0 20px;
+}
+
+.quiz-container {
+    width: 10vw;
+    height: 20vw;
+    padding: 0 20px;
+    margin: auto;
+}
+
+.quiz-container:not(#section-1):not(#section-2) {
+    display: block;
+}
+
+.quiz-container:not(#section-3) {
+    display: inline-flex;
+}

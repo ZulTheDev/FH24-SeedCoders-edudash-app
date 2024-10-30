@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Teachers Dashboard</title>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="nav">
+                <div class="nav-item"><a href="/about">About</a></div>
+                <div class="nav-item"><a href="#top">HOME</a></div>
+                <button type="button" onclick="create()" class="nav-item" id="create">Create</button>
+                <div class="nav-item">
+                    <a href="/profile"><img src="" alt="" title="profile"></a>
+                </div>
+            </div>
+
+            <h1 class="greet"> Hello, <br/>
+                <span id="username" onclick="username()">Anonymous!</span>
+            </h1>
+
+            <hr>
+        </div>
+
+        <div id="content">
+
+            <!--Class-->
+            <div id="section-1">
+                <h3 class="header">Your Class</h3>
+
+                <div class="class-container">
+                    <h3 class="class-title">Class A</h3>
+                    <h3 class="subject-title"></h3>
+                    <h4 class="header-content">Due soon!</h4>
+                    <label for="student-submission" class="header-content">Overall Submission</label><br>
+                    <progress name="student-submission" value="7" max="10"></progress>
+                    <h2 class="total-class">10/10</h2>
+                </div>
+
+                <div class="class-container">
+                    <h3 class="class-title">Class B</h3>
+                    <h3 class="subject-title"></h3>
+                    <h4 class="header-content">Due soon!</h4>
+                    <label for="student-submission" class="header-content">Overall Submission</label><br>
+                    <progress name="student-submission" value="7" max="10"></progress>
+                    <h2 class="total-class">10/10</h2>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div id="section-2">
+                <h3 class="header">Your Students</h3>
+
+                <div class="student-container">
+                    <h3 class="student-title"></h3>
+                    <h3 class="conduct"></h3>
+                    <label for="student-conduct" class="header-content">Overall Conduct</label> <br>
+                    <progress name="student-conduct" value="7" max="10"></progress>
+
+                    <label for="student-academic" class="header-content">Overall Submission</label> <br>
+                    <progress name="student-academic" value="7" max="10"></progress>
+                    <button id="student-more" type="button" onclick="student()">More</button>
+                </div>
+
+                <div class="student-container">
+                    <h3 class="student-title"></h3>
+                    <h3 class="conduct"></h3>
+                    <label for="student-conduct" class="header-content">Overall Conduct</label> <br>
+                    <progress name="student-conduct" value="7" max="10"></progress>
+
+                    <label for="student-academic" class="header-content">Overall Submission</label> <br>
+                    <progress name="student-academic" value="7" max="10"></progress>
+                    <button id="student-more" type="button" onclick="student()">More</button>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div id="section-3">
+                <h3 class="header">Your Quiz</h3>
+
+                <div class="quiz-container">
+                    <a href=""><img src="" alt="" class="quiz-image"></a>
+                    <h3 class="quiz-title">Title Of Quiz</h3>
+                    <h3 class="quiz-class">Class A</h3>
+                    <h3 class="quiz-date">20/10/24</h3>
+                </div>
+
+                <div class="quiz-container">
+                    <a href=""><img src="" alt="" class="quiz-image"></a>
+                    <h3 class="quiz-title">Title Of Quiz</h3>
+                    <h3 class="quiz-class">Class A</h3>
+                    <h3 class="quiz-date">20/10/24</h3>
+                </div>
+
+                <hr>
+                <div id="section-4">
+                    <h3 class="header">Your Resources</h3>
+                </div>
+
+            </div>
+
+
+        </div>
+        
+        <div id="footer">
+            <details class="card-info" >
+                <summary>Credits</summary>
+                <h2>Developers</h2>
+                <h3><a href="">Zulfaqar, Head front-end and security engineer (Singapore)</a></h3>
+                <h3><a href="">Ace, Support full-stack (Pakistan)</a></h3>
+                <h3><a href="">Ly, AI engineer (CA)</a></h3>
+                <h2>Project using</h2>
+                <h3>
+                    <span>TailwindCSS</span> <br>
+                    <span>NodeJS</span> <br>
+                </h3>
+
+            </details>
+            <details class="card-info"></details>
+        </div>
+    </div>
+
+    <!-- Javascripts -->
+     <script src="./script.js" async></script>
+</body>
+</html>
